@@ -1,0 +1,17 @@
+<body>
+  <h2><%=link_to 'create an article', new_article_path %></h2>
+
+  <% @articles.each do |article| %>
+    <h2><%= link_to article.title, article_path(article) %></h2>
+    <p><%= article.content%></p>
+    <ul class="list-unstyled">
+      <li>
+        <p><%= link_to 'update the entry', edit_article_path(article) %></p>
+      </li>
+      <li>
+        <p><%= link_to 'delete article', article_path(article)%></p>
+      </li>
+    </ul>
+  <% end %>
+
+ </body>

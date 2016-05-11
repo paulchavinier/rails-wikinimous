@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+
+  # get 'articles' => 'articles#index'
+  # get 'articles/:id' => 'articles#show'
+  # get 'articles/new' => 'articles#new'
+  # post 'articles' => 'articles#create'
+  # get 'articles/:id/edit' => 'articles#edit'
+  # patch 'articles/:id' => 'articles#update'
+  # delete 'articles/:id' => 'articles#destroy'
+
+  resources :articles
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
